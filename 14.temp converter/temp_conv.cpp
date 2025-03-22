@@ -1,16 +1,16 @@
 #include <iostream>
 
-double cels2fahr(double cels) {
-    return cels * 9.0 / 5.0 + 32;
+double cels2fahr(double temp) {
+    return temp * 9.0 / 5.0 + 32;
 }
 
-double fahr2cels(double fahr) {
-    return (fahr - 32) * 5.0 / 9.0;
+double fahr2cels(double temp) {
+    return (temp - 32) * 5.0 / 9.0;
 }
 
 int main(){
 
-    double fahr, cels;
+    double temp;
     int choice;
     std::cout << "*****Temperature Converter*****\n";
     std::cout << "1. Celsius to Fahrenheit\n";
@@ -21,13 +21,13 @@ int main(){
     switch(choice){
         case 1:
             std::cout << "Enter the temperature in Celsius: ";
-            std::cin >> cels;
-            std::cout << "Temperature in Fahrenheit: " << cels2fahr(cels);
+            std::cin >> temp;
+            std::cout << "Temperature in Fahrenheit: " << cels2fahr(temp);
             break;
         case 2:
             std::cout << "Enter the temperature in Fahrenheit: ";
-            std::cin >> fahr;
-            std::cout << "Temperature in Celsius: " << fahr2cels(fahr);
+            std::cin >> temp;
+            std::cout << "Temperature in Celsius: " << fahr2cels(temp);
             break;
         default:
             std::cout << "Invalid choice.";
