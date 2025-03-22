@@ -4,7 +4,7 @@
 int main(){
     int age;
     std::cout << "Enter your age: ";
-    if (!(std::cin >> age)){
+    if (!(std::cin >> age)){                 // checks should be always on top
         std::cout << "Invalid input.";
         return 1;
     }
