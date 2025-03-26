@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 double cels2fahr(double temp) {
     return temp * 9.0 / 5.0 + 32;
 }
