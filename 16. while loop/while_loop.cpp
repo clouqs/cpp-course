@@ -9,10 +9,11 @@ int main(){
             std::cout << "Name is too short. Please enter a longer name." << std::endl;
             name.clear(); // Clear the name to prompt again
         }
+        /*
         else if (name.length() > 20){
             std::cout << "Name is too long. Please enter a shorter name." << std::endl;
             name.clear(); // Clear the name to prompt again
-        }
+        } */
     }
     std::cout << "Hello, " << name << "!" << std::endl;
 }
